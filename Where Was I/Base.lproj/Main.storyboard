@@ -19,12 +19,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ewf-qv-EYX"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SsK-Mh-apX">
+                                <items>
+                                    <navigationItem title="Where Was I?" id="8Ws-OO-8Fq">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="su7-FG-RRf">
+                                            <connections>
+                                                <action selector="SaveButtonClicked:" destination="BYZ-38-t0r" id="8v4-xZ-YUq"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ewf-qv-EYX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7ob-jT-XIN"/>
+                            <constraint firstItem="ewf-qv-EYX" firstAttribute="top" secondItem="SsK-Mh-apX" secondAttribute="bottom" id="Eu1-L3-5KG"/>
+                            <constraint firstItem="SsK-Mh-apX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HXx-fO-uoi"/>
                             <constraint firstItem="ewf-qv-EYX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WLL-HI-rLu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ewf-qv-EYX" secondAttribute="bottom" id="cyn-Ya-OfI"/>
+                            <constraint firstAttribute="trailing" secondItem="SsK-Mh-apX" secondAttribute="trailing" id="dqt-08-33m"/>
+                            <constraint firstItem="SsK-Mh-apX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="enZ-cz-7bX"/>
                             <constraint firstAttribute="trailing" secondItem="ewf-qv-EYX" secondAttribute="trailing" id="mMS-eJ-0Mu"/>
                         </constraints>
                     </view>
@@ -34,6 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="143.47826086956522"/>
         </scene>
     </scenes>
 </document>

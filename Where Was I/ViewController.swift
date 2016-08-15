@@ -14,6 +14,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
     
+    @IBAction func SaveButtonClicked(_ sender: UIBarButtonItem) {
+        let coord = locationManager.location?.coordinate
+        if let lat = coord?.latitude {
+            print("Lat: " + String(lat))
+        }
+        if let long = coord?.longitude {
+            print("Long: " + String(long))
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
