@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F9DCAE81D63BF3C002D6360 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9DCAE71D63BF3C002D6360 /* DataModel.swift */; };
+		7F9DCAEA1D63C14B002D6360 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9DCAE91D63C14B002D6360 /* DataStore.swift */; };
 		7FB66FFA1D60C7530082CA29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB66FF91D60C7530082CA29 /* AppDelegate.swift */; };
 		7FB66FFC1D60C7530082CA29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB66FFB1D60C7530082CA29 /* ViewController.swift */; };
 		7FB66FFF1D60C7530082CA29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB66FFD1D60C7530082CA29 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F9DCAE71D63BF3C002D6360 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		7F9DCAE91D63C14B002D6360 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		7FB66FF61D60C7530082CA29 /* Where Was I.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Where Was I.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB66FF91D60C7530082CA29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FB66FFB1D60C7530082CA29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				7FB670001D60C7530082CA29 /* Assets.xcassets */,
 				7FB670021D60C7540082CA29 /* LaunchScreen.storyboard */,
 				7FB670051D60C7540082CA29 /* Info.plist */,
+				7F9DCAE71D63BF3C002D6360 /* DataModel.swift */,
+				7F9DCAE91D63C14B002D6360 /* DataStore.swift */,
 			);
 			path = "Where Was I";
 			sourceTree = "<group>";
@@ -151,7 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FB66FFC1D60C7530082CA29 /* ViewController.swift in Sources */,
+				7F9DCAEA1D63C14B002D6360 /* DataStore.swift in Sources */,
 				7FB66FFA1D60C7530082CA29 /* AppDelegate.swift in Sources */,
+				7F9DCAE81D63BF3C002D6360 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +317,7 @@
 				7FB6700A1D60C7540082CA29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

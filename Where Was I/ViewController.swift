@@ -17,10 +17,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func SaveButtonClicked(_ sender: UIBarButtonItem) {
         let coord = locationManager.location?.coordinate
         if let lat = coord?.latitude {
-            print("Lat: " + String(lat))
-        }
-        if let long = coord?.longitude {
-            print("Long: " + String(long))
+            if let long = coord?.longitude {
+                DataStore().storeDataPoint(lat: String(lat), long: String(long))
+            }
         }
     }
     
