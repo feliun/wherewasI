@@ -28,6 +28,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
+        if let lastCoords = DataStore().getLastLocation() {
+            let annotation = MKPointAnnotation()
+            annotation.coordinate.latitude = Double(lastCoords.latitude)!
+            annotation.coordinate.longitude = Double(lastCoords.longitude)!
+            
+            annotation.title = "I was here!"
+            annotation.subtitle = "remember?"
+            mapView.addAnnotation(annotation)
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
